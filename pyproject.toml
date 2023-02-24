@@ -1,0 +1,7 @@
+[project]
+name = "blender_addon_utils"
+authors = [{name = "30350n"}]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = [".."]

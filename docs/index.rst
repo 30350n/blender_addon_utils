@@ -1,9 +1,9 @@
 blender_addon_utils docs
 =================================
 
-.. automodule:: register
+.. automodule:: blender_addon_utils.register
    :members:
    :member-order: bysource
 
-.. automodule:: error_helper
+.. automodule:: blender_addon_utils.error_helper
    :members:
