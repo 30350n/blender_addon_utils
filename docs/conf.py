@@ -1,6 +1,3 @@
-import sys
-from pathlib import Path
-
 project = "blender_addon_utils"
 author = "30350n"
 

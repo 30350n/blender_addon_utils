@@ -5,3 +5,4 @@ dynamic = ["version"]
 
 [tool.setuptools.packages.find]
 where = [".."]
+include = ["blender_addon_utils*"]
