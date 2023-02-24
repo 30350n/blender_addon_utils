@@ -5,6 +5,7 @@ sys.path.insert(0, str((Path(__file__).resolve().parents[1])))
 
 project = "blender_addon_utils"
 author = "30350n"
+copyright = "2023, 30350n"
 
 version = "0.1"
 release = "0.1"
