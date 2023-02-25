@@ -33,12 +33,17 @@ You can declare required dependencies for your addon via :func:`add_dependencies
 | The panel first offers the option to install pip and then the required dependencies.
 | After dependency installation is complete, your addon will be automatically reloaded.
 
+| By default, dependencies will be installed to a ``site-packages`` directory inside the root
+  directory of the package that's calling the :func:`add_dependencies` function.
+| So if you call :func:`add_dependencies` in ``my_addon/__init.py``, dependencies will be
+  installed to ``my_addon/site-packages`` (make sure your vcs ignores this folder).
+
 Usage
 ~~~~~
 
 To use the :func:`add_dependencies` and :func:`register_modules_factory` functionality,
 all your addon code will have to be arranged into submodules, which each submodule having its
-own :func:`register` and :func:`unregister` functions.
+own :code:`register()` and :code:`unregister()` functions.
 
 Your :code:`__init__.py` should only contain minimal setup code, like this:
 

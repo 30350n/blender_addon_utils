@@ -10,8 +10,8 @@ def register_modules_factory(modules: Iterable[str]) -> Tuple[Callable, Callable
     (if dependencies were added via :func:`add_dependencies`).
 
     :param list deps: List of module file names to register.
-        Each file has to define its own :func:`register` and :func:`unregister` functions.
-    :return: :func:`register` and :func:`unregister` function
+        Each file has to define its own :code:`register()` and :code:`unregister()` functions.
+    :return: :code:`register()` and :code:`unregister()` function
     """
 
     frame = inspect.currentframe()
@@ -52,6 +52,7 @@ def add_dependencies(deps: dict, path: Path = None, no_extra_deps: bool = False)
 
     :param dict deps: Pairs of pip package and module names (can be the same)
     :param pathlib.Path path: Directory to install the dependencies to
+        (defaults to ``calling_package_root/site_packages``)
     :param bool no_extra_deps: Ignore any sub-dependencies required (pip --no-deps option)
     """
 
