@@ -69,7 +69,7 @@ def add_dependencies(deps: dict, path: Path = None, no_extra_deps: bool = False)
     path = path.resolve()
 
     if not (path_str := str(path)) in sys.path:
-        sys.path.append(path_str)
+        sys.path.insert(0, path_str)
 
     importlib.invalidate_caches()
 
