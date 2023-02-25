@@ -24,4 +24,4 @@ addon.
 ## License
 
 - This project is licensed under
-  [GPLv3](https://github.com/30350n/pcb2blender/blob/master/LICENSE).
+  [GPLv3](https://github.com/30350n/blender_addon_utils/blob/master/LICENSE).
