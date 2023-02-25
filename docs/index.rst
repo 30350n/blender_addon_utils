@@ -35,7 +35,7 @@ You can declare required dependencies for your addon via :func:`add_dependencies
 
 | By default, dependencies will be installed to a ``site-packages`` directory inside the root
   directory of the package that's calling the :func:`add_dependencies` function.
-| So if you call :func:`add_dependencies` in ``my_addon/__init.py``, dependencies will be
+| So if you call :func:`add_dependencies` in ``my_addon/__init__.py``, dependencies will be
   installed to ``my_addon/site-packages`` (make sure your vcs ignores this folder).
 
 Usage
