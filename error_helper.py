@@ -22,7 +22,7 @@ class ErrorHelper:
         self.report({"ERROR"}, msg)
         return {"CANCELLED"}
 
-    def warning(self, msg):
+    def warning(self, msg: AnyStr):
         """
         Report and print warning.
 
