@@ -18,3 +18,4 @@ dependencies and checking for updates.
 
     register
     error_helper
+    debug
