@@ -1,4 +1,5 @@
 import inspect, importlib, sys
+from importlib import util as importlib_util
 from pathlib import Path
 from typing import Tuple, Iterable, Callable
 
@@ -75,7 +76,7 @@ def add_dependencies(deps: dict, path: Path = None, no_extra_deps: bool = False)
 
     missing_deps = []
     for dependency, module in deps.items():
-        if not importlib.util.find_spec(module):
+        if not importlib_util.find_spec(module):
             missing_deps.append(dependency)
 
     _DEPENDENCIES.pop(caller_name, None)
