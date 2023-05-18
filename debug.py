@@ -29,6 +29,6 @@ def _auto_format_duration(time_s: float):
     if (us := time_s * 1e6) < 1e4:
         return f"{us:7.2f} us"
     elif (ms := time_s * 1e3) < 1e4:
-        return f"{ms:7.2f} ms" 
+        return f"{ms:7.2f} ms"
     else:
         return f"{time_s:7.2f} s "

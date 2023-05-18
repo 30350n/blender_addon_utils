@@ -27,7 +27,7 @@ def get_dependency_addon_prefs(package, deps, path, no_extra_deps):
                 request = requests.get(GET_PIP_URL)
                 if request.status_code != STATUS_CODE.OK:
                     return self.error(
-                        f"received invalid status code '{request.status_code}' " \
+                        f"received invalid status code '{request.status_code}' "
                         f"from '{GET_PIP_URL}'")
 
                 get_pip_content = request.content
