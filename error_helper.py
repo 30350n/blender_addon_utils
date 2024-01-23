@@ -1,5 +1,6 @@
-import sys
 from typing import AnyStr
+
+from _error_helper import error, warning
 
 COLOR_ERROR = "\033[91m"
 COLOR_WARNING = "\033[93m"
@@ -10,7 +11,7 @@ class ErrorHelper:
     Mixin class for operators to simplify error/warning handling.
     """
 
-    def error(self, msg: AnyStr) -> set:
+    def error(self, msg: AnyStr, prefix="error: ") -> set:
         """
         Report and print error message.
 
@@ -18,16 +19,16 @@ class ErrorHelper:
         :return: :code:`{"CANCELLED"}`
         """
 
-        print(f"{COLOR_ERROR}error: {msg}{COLOR_END}", file=sys.stderr)
+        error(msg, prefix=prefix)
         self.report({"ERROR"}, msg)
         return {"CANCELLED"}
 
-    def warning(self, msg: AnyStr):
+    def warning(self, msg: AnyStr, prefix="warning: "):
         """
         Report and print warning.
 
         :param str msg: The warning message
         """
 
-        print(f"{COLOR_WARNING}warning: {msg}{COLOR_END}")
+        warning(msg, prefix=prefix)
         self.report({"WARNING"}, msg)
