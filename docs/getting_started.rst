@@ -1,7 +1,7 @@
 Installation
 ~~~~~~~~~~~~
 
-Add the `blender_addon_utils <https://github.com/30350n/blender_addon_utils>`_ respository to
+Add the `blender_addon_utils <https://github.com/30350n/blender_addon_utils>`_ repository to
 your addon as a submodule:
 
 .. code-block:: bash
@@ -52,7 +52,7 @@ Your :code:`__init__.py` should only contain minimal setup code, like this:
     add_dependencies(deps)
 
     modules = ["my_submodule"]
-    register, unregister = register_modules_factory(modules) 
+    register, unregister = register_modules_factory(modules)
 
 Example :code:`my_submodule.py` file:
 

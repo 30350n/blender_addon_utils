@@ -1,7 +1,9 @@
-import inspect, importlib, sys
+import importlib
 from importlib import util as importlib_util
+import inspect
 from pathlib import Path
-from typing import Tuple, Iterable, Callable
+import sys
+from typing import Callable, Iterable, Tuple
 
 _DEPENDENCIES = {}
 

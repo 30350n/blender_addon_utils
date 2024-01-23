@@ -1,6 +1,6 @@
-from .register import register_modules_factory, add_dependencies
 from .error_helper import ErrorHelper
+from .register import add_dependencies, register_modules_factory
 
-__all__ = ["register_modules_factory", "add_dependencies", "ErrorHelper"]
+__all__ = ["ErrorHelper", "add_dependencies", "register_modules_factory"]
 
 __version__ = "0.2"

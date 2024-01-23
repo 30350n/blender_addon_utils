@@ -2,7 +2,7 @@
 Blender-Addon-Utils Documentation
 =================================
 
-Welcome to the blender_addon_utils documenation.
+Welcome to the blender_addon_utils documentation.
 
 This is a utility module for blender addons to help automatically installing addon
 dependencies and checking for updates.

@@ -1,13 +1,15 @@
-import bpy
-from bpy.types import Operator, AddonPreferences
-from bpy.props import BoolProperty
-
-import subprocess, sys, requests
-from subprocess import DEVNULL, CalledProcessError
 from pathlib import Path
+import subprocess
+from subprocess import DEVNULL, CalledProcessError
+import sys
 from tempfile import gettempdir
-from requests.status_codes import codes as STATUS_CODE
+
+import bpy
+from bpy.props import BoolProperty
+from bpy.types import AddonPreferences, Operator
+import requests
 from requests.exceptions import RequestException
+from requests.status_codes import codes as STATUS_CODE
 
 from .error_helper import ErrorHelper as _ErrorHelper
 
