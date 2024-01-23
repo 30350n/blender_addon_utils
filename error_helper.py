@@ -1,6 +1,6 @@
 from typing import AnyStr
 
-from _error_helper import error, warning
+from ._error_helper import error, warning
 
 COLOR_ERROR = "\033[91m"
 COLOR_WARNING = "\033[93m"
