@@ -2,6 +2,8 @@
 [![gplv3](https://img.shields.io/badge/license-GPLv3-lightgrey)](https://www.gnu.org/licenses/gpl-3.0.txt)
 [![docs](https://readthedocs.org/projects/blender-addon-utils/badge/?version=latest)](https://blender-addon-utils.readthedocs.io/en/latest/?badge=latest)
 
+## This project has been deprecated by the introduction of the [Blender Extensions Platform](https://docs.blender.org/manual/en/latest/advanced/extensions/index.html) in Blender 4.2+
+
 # blender_addon_utils
 
 The blender_addon_utils module offers functionality to enable the end-users of your blender
